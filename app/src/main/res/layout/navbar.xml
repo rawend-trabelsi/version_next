@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="10dp"
+    android:gravity="center">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bienvenue, Nom de l'utilisateur"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logout"
+        android:contentDescription="Logout"
+        android:background="@drawable/button_style"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scaleType="fitCenter" />
+
+
+    </LinearLayout>
+
+    <!-- Ligne de navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Bouton de navigation vers Menus -->
+        <Button
+            android:id="@+id/btnMenus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menus"
+            android:textColor="#000000"
+            android:background="@drawable/button_style"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:elevation="4dp" />
+
+        <!-- Bouton de navigation vers Avis -->
+        <Button
+            android:id="@+id/btnAvis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avis"
+            android:textColor="#000000"
+            android:background="@drawable/button_style"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:elevation="4dp" />
+
+        <!-- Bouton de navigation vers Contacts -->
+        <Button
+            android:id="@+id/btnContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textColor="@color/black"
+            android:background="@drawable/button_style"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:elevation="4dp" />
+
+        <!-- Nouveau bouton de navigation vers Catégories -->
+        <Button
+            android:id="@+id/btnCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catégories"
+            android:textColor="@color/black"
+            android:background="@drawable/button_style"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>

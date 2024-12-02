@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">@color/common_google_signin_btn_text_dark_default</color>
+    <color name="green" />
+
+        <!-- Couleurs définies par l'utilisateur -->
+        <color name="primary_color">#2196F3</color>  <!-- Bleu -->
+        <color name="primary_dark_color">#1976D2</color>  <!-- Bleu foncé -->
+        <color name="accent_color">#FF4081</color> <!-- Rose accent -->
+    <color name="primary_text">#000000</color> <!-- Couleur noire pour le texte -->
+        <color name="teal_200">#80CBC4</color>
+        <color name="teal_700">#00796B</color> <!-- Bleu-vert foncé -->
+
+
+
+    <!-- Autres couleurs -->
+</resources>

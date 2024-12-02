@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/platImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Plat Image"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/image_border" />
+
+    <TextView
+        android:id="@+id/platName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Détail"
+        android:drawableStart="@drawable/eye"
+        android:background="@drawable/btnrond"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="10sp"
+        android:drawablePadding="8dp"
+        android:scaleType="centerInside"
+    />
+
+
+</LinearLayout>

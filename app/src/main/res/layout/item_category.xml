@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/category_item_bg"
+    android:elevation="4dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Image de la catégorie (redimensionnée) -->
+    <ImageView
+        android:id="@+id/categoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+    android:layout_marginBottom="8dp"
+    android:scaleType="centerInside" />
+
+    <!-- Nom de la catégorie -->
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de la catégorie"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+</LinearLayout>

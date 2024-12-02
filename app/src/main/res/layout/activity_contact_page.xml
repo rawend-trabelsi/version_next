@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Contact_Page">
+
+    <!-- Navbar placée en haut -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/black">
+
+        <include
+            layout="@layout/navbar"></include>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Titre de la page -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contactez-nous"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- Informations de contact -->
+    <TextView
+        android:id="@+id/tvUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : flen@gmail.com"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black" />
+
+    <!-- Champ Message -->
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Votre message"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="16dp" />
+
+
+    <!-- Bouton d'envoi -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white" />
+
+    <!-- Images de plats en bas -->
+    <ImageView
+        android:id="@+id/imageBelowMessage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image"
+        android:contentDescription="Image description"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+    </LinearLayout>
+</LinearLayout>

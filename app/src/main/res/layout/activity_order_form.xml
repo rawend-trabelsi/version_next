@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour l'email -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="16sp" />
+
+    <!-- Champ pour le prix total -->
+    <TextView
+        android:id="@+id/totalPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix total : "
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Champ pour le numéro de téléphone -->
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Numéro de téléphone"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <!-- Champ pour l'adresse -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Adresse"
+        android:minHeight="48dp" />
+
+    <!-- Champ pour l'heure de livraison -->
+    <EditText
+        android:id="@+id/deliveryTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Heure de livraison (HH:mm)"
+        android:maxLength="5"
+        android:minHeight="48dp" />
+
+    <!-- Bouton de confirmation de commande -->
+    <Button
+        android:id="@+id/confirmOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmer la commande"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

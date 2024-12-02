@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E8FFF5"
+    android:padding="16dp">
+
+    <!-- Titre Sign-Up -->
+    <TextView
+        android:id="@+id/title_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign-Up"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#006400"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Username -->
+    <EditText
+
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+
+        android:layout_marginBottom="16dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email_input_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+
+        android:layout_marginBottom="16dp" />
+
+    <!-- Mot de passe -->
+    <EditText
+        android:id="@+id/password_input_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+
+        android:layout_marginBottom="16dp" />
+
+    <!-- Confirmation du mot de passe -->
+    <EditText
+        android:id="@+id/confirm_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+
+        android:layout_marginBottom="16dp" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+    <!-- Bouton Register -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="#006400"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text_view_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="Already have an account? Click to login"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
